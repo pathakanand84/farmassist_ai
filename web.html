@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmAssist AI 🌾</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>FarmAssist AI 🌱</h1>
+        <p>Smart Farming with AI Assistance</p>
+    </header>
+
+    <main>
+        <!-- Weather Forecast -->
+        <section class="card">
+            <h2>🌤️ Weather Forecast</h2>
+            <div id="weather-data">
+                <p>Loading weather data...</p>
+            </div>
+            <button onclick="fetchWeather()">Update Weather</button>
+        </section>
+
+        <!-- Crop Suggestions -->
+        <section class="card">
+            <h2>🌽 Best Crops to Plant</h2>
+            <div id="crop-suggestion">
+                <p>Enter your location for AI-based crop suggestions.</p>
+            </div>
+            <input type="text" id="location" placeholder="Enter your village/city">
+            <button onclick="getCropSuggestions()">Get Suggestions</button>
+        </section>
+
+        <!-- Market Trends -->
+        <section class="card">
+            <h2>📈 Market Prices</h2>
+            <div id="market-trends">
+                <p>Loading latest market trends...</p>
+            </div>
+        </section>
+
+        <!-- AI Chatbot -->
+        <section class="card">
+            <h2>🤖 Ask FarmAssist AI</h2>
+            <input type="text" id="ai-question" placeholder="Ask about pests, fertilizers, etc.">
+            <button onclick="askAI()">Ask</button>
+            <div id="ai-response"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 FarmAssist AI | Helping Farmers Grow Smarter</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
